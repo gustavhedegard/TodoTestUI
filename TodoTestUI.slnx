@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TodoTestUI/todotestui.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>
