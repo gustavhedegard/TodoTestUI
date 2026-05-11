@@ -73,9 +73,7 @@ function App() {
             <hr />
 
             <ul style={{ listStyle: 'none', padding: 0 }}>
-                {tasks.map(t => {
-                    console.log(t.id, t.isDone, t);
-                    return (
+                    {tasks.map(t => (
                     <li key={t.id} style={{
                         borderBottom: '1px solid #ccc',
                         padding: '15px 0',
@@ -102,8 +100,7 @@ function App() {
                             </button>
                         </div>
                     </li>
-                );
-            })}
+            ))}
             </ul>
         </div>
     )
