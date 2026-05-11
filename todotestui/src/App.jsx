@@ -11,7 +11,7 @@ function App() {
     const fetchTasks = () => {
         axios.get(`${BASE_URL}/download-tasks`)
             .then(res => setTasks(res.data))
-            .catch(err => console.error("Kunde inte h�mta tasks:", err))
+            .catch(err => console.error("Kunde inte hämta tasks:", err))
     }
 
     useEffect(() => { fetchTasks() }, [])
@@ -31,7 +31,7 @@ function App() {
                 setDescription('');
             })
             .catch(err => {
-                console.error("Detaljerat fel fr�n servern:", err.response?.data);
+                console.error("Detaljerat fel från servern:", err.response?.data);
             });
     };
 
